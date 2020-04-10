@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html >
+<!--From https://codepen.io/frytyler/pen/EGdtg-->
+<head>
+  
+  <title>ML API</title>
+
+  
+</head>
+
+<body>
+<h1>Predict blood analysis</h1>
+
+<form method="POST" action="/submit">
+	<input type="text" name="f1" placeholder="Months since Last Donation">
+	<input type="text" name="f2" placeholder="Number of Donations">
+    <input type="text" name="f3" placeholder="Total Volume Donated (c.c.)">
+    <input type="text" name="f4" placeholder="Months since First Donation">
+
+    <button type="submit">Predict</button>
+
+<br>
+<br>
+    {{prediction_text}}
+</form>
+</body>
+</html>
